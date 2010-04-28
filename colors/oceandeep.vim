@@ -137,5 +137,4 @@ highlight Identifier    ctermfg=DarkYellow
 highlight Structure     ctermfg=DarkGreen
 highlight String        ctermfg=DarkCyan
 
-highlight LineNr        cterm=bold ctermbg=DarkBlue ctermfg=White
 " vim: sw=4 ts=4 et
