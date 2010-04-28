@@ -8,4 +8,3 @@ set nocp
 filetype plugin on
 filetype indent on
 set guifont=DejaVu\ Sans\ Mono:h20
-set t_Co=256
