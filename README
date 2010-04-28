@@ -1,0 +1,14 @@
+This is my vim settings, most of which is none of my doing (plugins wise)
+
+On unix based systems I advise doing the following: 
+(Not that anyone will probably ever read or use my vim settings)
+
+# Move to your home directory
+cd ~ 
+# Clone this repository
+git clone git@github.com:yoda/vim.git
+# Make symbolic links to the directory and the vimrc
+ln -s ~/vim/ .vim
+ln -s ~/vim/vimrc .vimrc
+# Now vim should be happy
+
