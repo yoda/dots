@@ -1,7 +1,26 @@
 set backspace=2
 set background=dark
+
+" Pretty settings
 set number
 set ts=4 sts=4 sw=4 expandtab
+set wrap
+set linebreak
+
+" From vimcasts.org
+" Hold command and press navigation key inorder to navigate to apparent 
+" lines.
+vmap <D-j> gj
+vmap <D-k> gk
+vmap <D-4> g$
+vmap <D-6> g^
+vmap <D-0> g^
+nmap <D-j> gj
+nmap <D-k> gk
+nmap <D-4> g$
+nmap <D-6> g^
+nmap <D-0> g^
+
 syntax on
 set nocp
 filetype plugin on
