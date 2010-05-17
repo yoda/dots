@@ -12,3 +12,17 @@ ln -s ~/vim/ .vim
 ln -s ~/vim/vimrc .vimrc
 # Now vim should be happy
 
+################################
+For the slime plugin
+################################
+screen -S session01
+<Ctrl>-a <Shift>-a window01
+run shell (irb, mysql, etc...)
+
+The magic key is <Ctrl>-c <Ctrl>-c
+The first time, you'll be prompted for the "session name" and the "window name"
+Subsequent times will be automated
+You can reprompt for "session name" and "window name" with <Ctrl>-c v
+By default, <Ctrl>-c <Ctrl>-c will select the current paragraph and copy-paste it
+But you can make your own selection first, and send it over with <Ctrl>-c <Ctrl>-c
+
