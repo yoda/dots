@@ -8,7 +8,7 @@ filetype plugin on
 filetype indent on
 set guifont=DejaVu\ Sans\ Mono:h20
 " If not gui
-colorscheme Vitamins_Vim_Colorscheme_by_hcalves 
+colorscheme 256-grayvim
 " Color Scheme (only if GUI running)
 if has("gui_running")
     colorscheme rootwater 
@@ -31,3 +31,8 @@ endfu
 com! -nargs=* Color256 exe Do256()
 com! -nargs=* UnColor256 exe UnDo256()
 
+" Trainer Wheels "
+map <Up> <Esc>
+map <Down> <Esc>
+map <Left> <Esc>
+map <Right> <Esc>
