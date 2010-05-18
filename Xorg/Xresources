@@ -1,0 +1,39 @@
+xterm*font: -*-fixed-medium-r-*-*-20-*-*-*-*-*-iso8859-*
+xterm*font1: -*-*-*-*-*-*-2-*-*-*-*-*-*-*
+xterm*font2: -misc-fixed-*-r-normal-*-8-*-*-*-*-*-iso8859-*
+xterm*font3: -b&h-lucidatypewriter-bold-*-*-*-12-*-*-*-*-*-*-*
+xterm*font4: -*-screen-bold-r-normal-*-16-*-*-*-*-*-iso8859-*
+xterm*font5: -*-lucidatypewriter-medium-*-*-*-18-*-*-*-*-*-*-*
+xterm*font6: -*-lucidatypewriter-medium-*-*-*-20-*-*-*-*-*-*-*
+xterm*font7: -dec-terminal-bold-r-normal-*-14-*-*-*-*-*-iso8859-*
+
+XTerm*background:  #000000
+XTerm*foreground:  #9f9f9f
+	XTerm*color0:			#000000
+	XTerm*color1:			#c00000
+	XTerm*color2:			#008000
+	XTerm*color3:			#808000
+	XTerm*color4:			#0000c0
+	XTerm*color5:			#c000c0
+	XTerm*color6:			#008080
+	XTerm*color7:			#c0c0c0
+	XTerm*color8:			#808080
+	XTerm*color9:			#ff6060
+	XTerm*color10:			#00ff00
+	XTerm*color11:			#ffff00
+	XTerm*color12:			#8080ff
+	XTerm*color13:			#ff40ff
+	XTerm*color14:			#00ffff
+	XTerm*color15:			#ffffff
+	Xterm*cursorColor:		Black
+
+
+XTerm*pointerColor: red
+XTerm*pointerColorBackground: black
+XTerm*internalBorder: 3
+XTerm*loginShell: true
+XTerm*scrollBar: false
+XTerm*scrollKey: true
+XTerm*saveLines: 1000
+XTerm*multiClickTime: 250 
+*visualBell: true
