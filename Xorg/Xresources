@@ -18,7 +18,7 @@ urxvt*foreground:  #00ff00
 	urxvt*color13:			#ff40ff
 	urxvt*color14:			#00ffff
 	urxvt*color15:			#ffffff
-	urxvt*cursorColor:		Black
+	urxvt*cursorColor:		White
 
 
 urxvt*pointerColor: red
