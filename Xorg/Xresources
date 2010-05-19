@@ -49,7 +49,7 @@ xterm*font6: -*-lucidatypewriter-medium-*-*-*-20-*-*-*-*-*-*-*
 xterm*font7: -dec-terminal-bold-r-normal-*-14-*-*-*-*-*-iso8859-*
 
 XTerm*background:  #000000
-XTerm*foreground:  #9f9f9f
+XTerm*foreground:  #00ff00
 	XTerm*color0:			#000000
 	XTerm*color1:			#c00000
 	XTerm*color2:			#008000
