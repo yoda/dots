@@ -1,11 +1,4 @@
-urxvt*font: -*-fixed-medium-r-*-*-20-*-*-*-*-*-iso8859-*
-urxvt*font1: -*-*-*-*-*-*-2-*-*-*-*-*-*-*
-urxvt*font2: -misc-fixed-*-r-normal-*-8-*-*-*-*-*-iso8859-*
-urxvt*font3: -b&h-lucidatypewriter-bold-*-*-*-12-*-*-*-*-*-*-*
-urxvt*font4: -*-screen-bold-r-normal-*-16-*-*-*-*-*-iso8859-*
-urxvt*font5: -*-lucidatypewriter-medium-*-*-*-18-*-*-*-*-*-*-*
-urxvt*font6: -*-lucidatypewriter-medium-*-*-*-20-*-*-*-*-*-*-*
-urxvt*font7: -dec-terminal-bold-r-normal-*-14-*-*-*-*-*-iso8859-*
+urxvt*font: -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso8859-1
 
 urxvt*background:  #000000
 urxvt*foreground:  #00ff00
