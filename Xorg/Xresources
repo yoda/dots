@@ -1,4 +1,4 @@
-urxvt*font: -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso8859-1
+urxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=13
 
 urxvt*background:  #000000
 urxvt*foreground:  #00ff00
