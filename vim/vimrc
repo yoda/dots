@@ -55,3 +55,5 @@ map <Up> <Esc>
 map <Down> <Esc>
 map <Left> <Esc>
 map <Right> <Esc>
+
+command W w !sudo tee % > /dev/null
