@@ -1,23 +1,23 @@
 #!/bin/sh
 
 # Setup screen
-ln -s "$HOME/.screenrc" screen/screenrc
+ln -s screen/screenrc "$HOME/.screenrc" 
 
 # Setup tmux
-ln -s "$HOME/.tmux.conf" tmux/screenrc
+ln -s tmux/screenrc "$HOME/.tmux.conf"
 
 # Setup vim
-ln -s "$HOME/.vimrc" vim/vimrc
-ln -s "$HOME/.vim" vim/vim/
+ln -s vim/vimrc "$HOME/.vimrc"
+ln -s vim/vim/ "$HOME/.vim"
 
 # Setup awesome
-ln -s "$HOME/.config" awesome/config/
+ln -s awesome/config/ "$HOME/.config"
 
 # Setup Xorg
-ln -s "$HOME/.Xdefaults" Xorg/Xresources
-ln -s "$HOME/.xinitrc" Xorg/Xinit
+ln -s Xorg/Xresources "$HOME/.Xdefaults"
+ln -s Xorg/Xinit "$HOME/.xinitrc"
 
 # Setup irssi
-ln -s "$HOME/.irssi" irssi/irssi/
+ln -s irssi/irssi/ "$HOME/.irssi"
 
 
