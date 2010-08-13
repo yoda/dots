@@ -1,8 +1,8 @@
- # Merge custom X resources
- # xrdb -merge "${HOME}/.Xdefaults"
+#!/bin/sh
+#
+# User's .xinitrc file
  
- # Start a terminal emulator in the background
- # urxvt -T Terminal &
+xrdb -merge "${HOME}/.Xresources"
+xmodmap "${HOME}/dots/Xorg/Xmodmap"
  
- # Start the window manager
- exec /opt/local/bin/awesome 
+exec awesome
