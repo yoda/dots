@@ -8,7 +8,7 @@ ln -s tmux/screenrc "$HOME/.tmux.conf"
 
 # Setup vim
 ln -s vim/vimrc "$HOME/.vimrc"
-ln -s vim/vim/ "$HOME/.vim"
+ln -s vim/ "$HOME/.vim"
 
 # Setup awesome
 ln -s awesome/config/ "$HOME/.config"
