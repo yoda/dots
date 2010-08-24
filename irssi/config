@@ -257,6 +257,6 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "yoda"; user_name = "yoda"; nick = "yoda"; };
+  core = { real_name = "yoda"; user_name = "yoda"; nick = "zxwy"; };
   "fe-text" = { actlist_sort = "refnum"; };
 };
