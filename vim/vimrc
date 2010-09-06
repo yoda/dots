@@ -3,7 +3,7 @@ set background=dark
 
 " Pretty settings
 set number
-set ts=4 sts=4 sw=4 expandtab
+set ts=4 sts=2 sw=2 expandtab
 set wrap
 set linebreak
 
