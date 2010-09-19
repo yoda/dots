@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/yoda/lang/ruby/cgr-foundation'
 let g:netrw_dirhist_2='/Users/yoda/lang/ruby/cgr-foundation/lib'
 let g:netrw_dirhist_3='/Users/yoda/lang/ruby/cgr-foundation/lib/bowtiepdf'
 let g:netrw_dirhist_4='/Users/yoda/lang/ruby/cgr-foundation/app/views'
 let g:netrw_dirhist_5='/Users/yoda/lang/ruby/cgr-foundation/app/views/tasks'
 let g:netrw_dirhist_6='/Users/yoda/lang/ruby/cgr-foundation/app/views'
+let g:netrw_dirhist_7='/Users/yoda/lang/ruby/cgr-foundation/lib/risk_schematics'

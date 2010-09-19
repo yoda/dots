@@ -21,7 +21,7 @@ urxvt*foreground:  #00ff00
 	urxvt*cursorColor:		White
 
 
-urxvt*pointerColor: red
+urxvt*pointerColor: white 
 urxvt*pointerColorBackground: black
 urxvt*internalBorder: 3
 urxvt*loginShell: true
@@ -62,7 +62,7 @@ XTerm*foreground:  #00ff00
 	Xterm*cursorColor:		Black
 
 
-XTerm*pointerColor: red
+XTerm*pointerColor: white 
 XTerm*pointerColorBackground: black
 XTerm*internalBorder: 3
 XTerm*loginShell: true

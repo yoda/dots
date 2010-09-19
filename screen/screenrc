@@ -2,7 +2,7 @@ bindkey + resize +1
 bindkey _ resize -1
 termcap xterm*  xn:hs@
 hardstatus on
-blankerprg cmatrix -ab -u9
+# blankerprg cmatrix -ab -u9
 idle 60 blanker
 shell -$SHELL
 startup_message off
