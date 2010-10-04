@@ -56,12 +56,16 @@ endfu
 com! -nargs=* Color256 exe Do256()
 com! -nargs=* UnColor256 exe UnDo256()
 
-" Trainer Wheels "
-map <Up> <Esc>
-map <Down> <Esc>
-map <Left> <Esc>
-map <Right> <Esc>
+let g:rubycomplete_buffer_laoding = 1
+let g:rubycomplete_classes_in_global = 1
+let g:rubycomplete_rails = 1
 
+if has("autocmd") && exists("+omnifunc")
+autocmd Filetype *
+        \	if &omnifunc == "" |
+        \		setlocal omnifunc=syntaxcomplete#Complete |
+        \	endif
+endif
 set noswapfile
 
 command W w !sudo tee % > /dev/null
