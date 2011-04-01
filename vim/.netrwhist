@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Users/yoda/lang/ruby/cancan-permits/lib/cancan-permits'
 let g:netrw_dirhist_2='/Users/yoda/lang/ruby/cgr-foundation/app/models/validators'
 let g:netrw_dirhist_3='/Users/yoda/lang/ruby/cgr-foundation/doc'
 let g:netrw_dirhist_4='/Users/yoda/lang/ruby/phpbb-auth/lib/phpbb_auth'
+let g:netrw_dirhist_5='/Users/yoda/lang/ruby/cgr-foundation/new_severity_pyramid_report'
