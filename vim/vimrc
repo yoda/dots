@@ -3,7 +3,6 @@ call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
 set backspace=2
-set background=dark
 
 " Pretty settings
 set number
@@ -33,10 +32,10 @@ filetype plugin on
 filetype indent on
 set guifont=DejaVu\ Sans\ Mono:h20
 " If not gui
-colorscheme 256-grayvim
+colorscheme solarized
 " Color Scheme (only if GUI running)
 if has("gui_running")
-    colorscheme rootwater 
+  colorscheme solarized
 endif
 
 function Do256()
@@ -67,5 +66,7 @@ autocmd Filetype *
         \	endif
 endif
 set noswapfile
+
+set background=dark
 
 command W w !sudo tee % > /dev/null
