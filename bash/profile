@@ -81,7 +81,7 @@ On_ICyan='\e[0;106m'    # Cyan
 On_IWhite='\e[0;107m'   # White
 
 # Prompt
-PS1="\[$Green\u$Color_Off\]\[$Yellow@$Color_Off\]\[$BIBlue\h$Color_Off\]\[$Red:$Color_Off\]\[ $Cyan\w$Color_Off\]\[ $ICyan\$ \]$Color_Off"
+PS1="\[\[$Green\u$Color_Off\]\[$Yellow@$Color_Off\]\[$BIBlue\h$Color_Off\]\[$Red:$Color_Off\]\[ $Cyan\w$Color_Off\]\[ $ICyan\$ \]$Color_Off\]"
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
