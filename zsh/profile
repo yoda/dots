@@ -2,6 +2,8 @@
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+autoload -U colors && colors
+
 export CLICOLOR=1
 export LSCOLORS=Gxfxcxdxbxegedabagacad
 
@@ -81,7 +83,12 @@ On_ICyan='\e[0;106m'    # Cyan
 On_IWhite='\e[0;107m'   # White
 
 # Prompt
-PS1="\[$Green\u$Color_Off$Yellow@$Color_Off$BIBlue\h$Color_Off$Red: $Color_Off$Cyan\w$Color_Off $ICyan\$$Color_Off\] "
+username="$(print %{$Green%}%n%{$Color_Off%})"
+atsign="$(print %{$Yellow%}@%{$Color_Off%})"
+hostname="$(print %{$BIBlue%}%m%{$Color_Off%})"
+colon="$(print %{$Red%}:%{$Color_Off%})"
+currentworkingdirectory="$(print %{$Cyan%}%d%{$Color_Off%})"
 
+PS1="$username$atsign$hostname$colon $currentworkingdirectory %#> "
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

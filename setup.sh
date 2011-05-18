@@ -18,7 +18,8 @@ export AWESOMECONF="$HOME/.config"
 export XRESCONF="$HOME/.Xdefaults"
 export XINITRCCONF="$HOME/.xinitrc"
 export IRSSICONF="$HOME/.irssi"
-export PROFILECONF="$HOME/.profile"
+export BASHPROFILECONF="$HOME/.profile"
+export ZSHPROFILECONF="$HOME/.zshrc"
 
 export ERRORMSG="exists backup or remove"
 export COMPLETEMSG="Created link successfully"
@@ -97,11 +98,20 @@ else
     ln -s $SCRIPTDIR/irssi/irssi/ $IRSSICONF 
 fi
 
-if [ -e $PROFILECONF ]
+if [ -e $BASHPROFILECONF ]
 then
-    echo $PROFILECONF $ERRORMSG
+    echo $BASHPROFILECONF $ERRORMSG
 else
-    echo $PROFILECONF $COMPLETEMSG
+    echo $BASHPROFILECONF $COMPLETEMSG
     # Setup irssi
-    ln -s $SCRIPTDIR/bash/profile $PROFILECONF 
+    ln -s $SCRIPTDIR/bash/profile $BASHPROFILECONF 
+fi
+
+if [ -e $ZSHPROFILECONF ]
+then
+    echo $ZSHPROFILECONF $ERRORMSG
+else
+    echo $ZSHPROFILECONF $COMPLETEMSG
+    # Setup irssi
+    ln -s $SCRIPTDIR/zsh/profile $ZSHPROFILECONF 
 fi
