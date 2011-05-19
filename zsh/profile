@@ -7,6 +7,10 @@ autoload -U colors && colors
 export CLICOLOR=1
 export LSCOLORS=Gxfxcxdxbxegedabagacad
 
+HISTSIZE=99999
+SAVEHIST=99999
+HISTFILE=~/.history
+
 
 # Colors
 # Reset
