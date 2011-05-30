@@ -1,3 +1,15 @@
+# Path to your oh-my-zsh configuration.
+export ZSH=$HOME/dots/zsh/.oh-my-zsh
+
+# Theme
+export ZSH_THEME="robbyrussell"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
 # MacPorts Installer addition on 2011-03-04_at_11:59:28: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
@@ -93,6 +105,6 @@ hostname="$(print %{$BIBlue%}%m%{$Color_Off%})"
 colon="$(print %{$Red%}:%{$Color_Off%})"
 currentworkingdirectory="$(print %{$Cyan%}%d%{$Color_Off%})"
 
-PS1="$username$atsign$hostname$colon $currentworkingdirectory %#> "
+#PS1="$username$atsign$hostname$colon $currentworkingdirectory %#> "
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
