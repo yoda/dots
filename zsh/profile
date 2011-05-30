@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-export ZSH=$HOME/dots/zsh/.oh-my-zsh
+export ZSH=$HOME/dots/zsh/oh-my-zsh
 
 # Theme
 export ZSH_THEME="robbyrussell"
