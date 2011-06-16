@@ -32,10 +32,10 @@ filetype plugin on
 filetype indent on
 set guifont=DejaVu\ Sans\ Mono:h20
 " If not gui
-colorscheme solarized
+colorscheme Vitamins_Vim_Colorscheme_by_hcalves
 " Color Scheme (only if GUI running)
 if has("gui_running")
-  colorscheme solarized
+  colorscheme Vitamins_Vim_Colorscheme_by_hcalves
 endif
 
 function Do256()
@@ -67,6 +67,5 @@ autocmd Filetype *
 endif
 set noswapfile
 
-set background=dark
 
 command W w !sudo tee % > /dev/null
