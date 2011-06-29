@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/yoda/lang/ruby/cancan-permits/lib/cancan-permits'
 let g:netrw_dirhist_2='/Users/yoda/lang/ruby/cgr-foundation/app/models/validators'
 let g:netrw_dirhist_3='/Users/yoda/lang/ruby/cgr-foundation/doc'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/yoda/lang/ruby/cgr-foundation/new_severity_pyramid
 let g:netrw_dirhist_6='/Users/yoda/lang/ruby/cgr-foundation/delayed_jobs'
 let g:netrw_dirhist_7='/Users/yoda/lang/ruby/cgr-foundation/app/views/task_mailer'
 let g:netrw_dirhist_8='/Users/yoda/lang/ruby/cgr-foundation/app/views/reviewable_mailer'
+let g:netrw_dirhist_9='/Users/yoda/lang/html/ns-stats'
