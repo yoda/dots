@@ -1,3 +1,5 @@
+export DISABLE_AUTO_UPDATE=true
+
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/dots/zsh/oh-my-zsh
 
