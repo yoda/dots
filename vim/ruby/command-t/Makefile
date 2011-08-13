@@ -4,7 +4,7 @@ SHELL = /bin/sh
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /opt/local/lib/ruby/1.8/i686-darwin10
+topdir = /opt/local/lib/ruby/1.8/i686-darwin11
 hdrdir = $(topdir)
 VPATH = $(srcdir):$(topdir):$(hdrdir)
 exec_prefix = $(prefix)
@@ -59,8 +59,8 @@ EXEEXT =
 
 RUBY_INSTALL_NAME = ruby
 RUBY_SO_NAME = ruby
-arch = i686-darwin10
-sitearch = i686-darwin10
+arch = i686-darwin11
+sitearch = i686-darwin11
 ruby_version = 1.8
 ruby = /opt/local/bin/ruby
 RUBY = $(ruby)
