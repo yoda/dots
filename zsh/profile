@@ -3,6 +3,9 @@ export DISABLE_AUTO_UPDATE=true
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/dots/zsh/oh-my-zsh
 
+# Osx Lion
+export CC=gcc-4.2
+
 # Theme
 export ZSH_THEME="gentoo"
 
