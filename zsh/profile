@@ -6,6 +6,11 @@ export ZSH=$HOME/dots/zsh/oh-my-zsh
 # Osx Lion
 export CC=gcc-4.2
 
+# RVM
+export rvm_project_rvmrc=1
+
+alias rr='cd /Users/yoda/lang/ruby/cgr-foundation'
+
 # Theme
 export ZSH_THEME="gentoo"
 
