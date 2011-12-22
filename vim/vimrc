@@ -70,3 +70,7 @@ set noswapfile
 
 
 command W w !sudo tee % > /dev/null
+
+if &diff
+  colorscheme evening
+endif

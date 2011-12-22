@@ -1,8 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/yoda/lang/ruby/cgr-foundation/app/views/admin/stakeholders'
-let g:netrw_dirhist_2='/Users/yoda/lang/html/cgr-html5slides-template/presentation01'
-let g:netrw_dirhist_3='/Users/yoda/lang/ruby/cgr-foundation/features/incident/impacts/clinical_injury'
-let g:netrw_dirhist_4='/Users/yoda/lang/ruby/cgr-foundation/features/step_definitions'
-let g:netrw_dirhist_5='/Users/yoda/lang/ruby/test-app/config/environments'
-let g:netrw_dirhist_6='/Users/yoda/lang/ruby/jruby-cgr-foundation'
+let g:netrw_dirhist_cnt =0
