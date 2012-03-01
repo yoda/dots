@@ -120,3 +120,5 @@ currentworkingdirectory="$(print %{$Cyan%}%d%{$Color_Off%})"
 #PS1="$username$atsign$hostname$colon $currentworkingdirectory %#> "
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

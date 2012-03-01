@@ -12,12 +12,6 @@ Dependency:
   string: pstoedit
   description: pstoedit must be installed to run; see http://www.pstoedit.net/pstoedit
 
-Extension "EPS Input" failed to load because a dependency was not met.
-Dependency:
-  type: executable
-  location: path
-  string: ps2pdf
-
 Extension "LaTeX formula" failed to load because a dependency was not met.
 Dependency:
   type: executable
@@ -47,12 +41,6 @@ Dependency:
   type: executable
   location: path
   string: gimp
-
-Extension "PostScript Input" failed to load because a dependency was not met.
-Dependency:
-  type: executable
-  location: path
-  string: ps2pdf
 
 Extension "Sketch Input" failed to load because a dependency was not met.
 Dependency:
