@@ -11,6 +11,9 @@ export rvm_project_rvmrc=1
 
 alias rr='cd /Users/yoda/lang/ruby/cgr-foundation'
 
+alias hidedesktop='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
+alias showdesktop='defaults write com.apple.finder CreateDesktop -bool true; killall Finder'
+
 # Theme
 export ZSH_THEME="gentoo"
 
@@ -25,7 +28,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 
-export PATH=/Users/yoda/buildbox/go/bin:$PATH
+export PATH=/Users/yoda/buildbox/go/bin:/usr/local/bin:$PATH
 autoload -U colors && colors
 
 export CLICOLOR=1
