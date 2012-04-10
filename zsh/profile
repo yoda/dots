@@ -28,7 +28,14 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 
-export PATH=/Users/yoda/buildbox/go/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=/Developer/usr/bin:$PATH
+
+export GOROOT=/usr/local/go
+export PATH=$GOROOT/bin:$PATH
+
+export PATH=/opt/local/include:/Developer/SDKs/MacOSX10.7.sdk/usr/X11/include:$PATH
+export GOPATH=/opt/local/include:/Developer/SDKs/MacOSX10.7.sdk/usr/X11/include:/Users/yoda/lang/go:$GOPATH
 autoload -U colors && colors
 
 export CLICOLOR=1
