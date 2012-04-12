@@ -26,19 +26,6 @@ nmap <D-0> g^
 
 nmap <silent> <Leader>t :CommandT<CR>
 
-syntax on
-set nocp
-filetype plugin on
-filetype indent on
-set guifont=DejaVu\ Sans\ Mono:h20
-" If not gui
-colorscheme Vitamins_Vim_Colorscheme_by_hcalves
-" Color Scheme (only if GUI running)
-if has("gui_running")
-  colorscheme Vitamins_Vim_Colorscheme_by_hcalves
-  set guifont=DejaVu\ Sans\ Mono:h14
-endif
-
 function Do256()
     " Enable 256 colors
     set t_Co=256
@@ -53,8 +40,31 @@ function UnDo256()
     set t_AF &vim
 endfu
 
+if match($TERMCAP, 'Co#256:') == 0 || match($TERMCAP, ':Co#256:') > 0 || match($TERM, 'screen') == 0          
+  call Do256()
+endif    
+
+if $TERM =~ "screen" || $TERM =~ "screen-256color"
+  let g:CommandTCancelMap     = ['<ESC>', '<C-c>']
+  let g:CommandTSelectNextMap = ['<C-n>', '<C-j>', '<ESC>OB']
+  let g:CommandTSelectPrevMap = ['<C-p>', '<C-k>', '<ESC>OA']
+endif
+
 com! -nargs=* Color256 exe Do256()
 com! -nargs=* UnColor256 exe UnDo256()
+
+syntax on
+set nocp
+filetype plugin on
+filetype indent on
+set guifont=DejaVu\ Sans\ Mono:h20
+" If not gui
+colorscheme Vitamins_Vim_Colorscheme_by_hcalves
+" Color Scheme (only if GUI running)
+if has("gui_running")
+  colorscheme Vitamins_Vim_Colorscheme_by_hcalves
+  set guifont=DejaVu\ Sans\ Mono:h14
+endif
 
 let g:rubycomplete_buffer_laoding = 1
 let g:rubycomplete_classes_in_global = 1
