@@ -4,7 +4,7 @@ export DISABLE_AUTO_UPDATE=true
 export ZSH=$HOME/dots/zsh/oh-my-zsh
 
 # Osx Lion
-export CC=gcc-4.2
+#export CC=gcc-4.2
 
 # RVM
 export rvm_project_rvmrc=1
