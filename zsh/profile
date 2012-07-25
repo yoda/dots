@@ -9,12 +9,17 @@ export ZSH=$HOME/dots/zsh/oh-my-zsh
 # RVM
 export rvm_project_rvmrc=1
 
-alias rr='cd /Users/yoda/lang/ruby/cgr-foundation'
+alias r1='cd /Users/yoda/lang/ruby/cgr-foundation'
+alias r2='cd /Users/yoda/lang/ruby/cgr-dispatch'
+alias r3='cd /Users/yoda/lang/ruby/tattle'
+alias r4='cd /Users/yoda/lang/ruby/cgr-notification'
 
 alias hidedesktop='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
 alias showdesktop='defaults write com.apple.finder CreateDesktop -bool true; killall Finder'
 
 alias wakeup='wget --no-check-certificate -i ~/cgr_hosts.txt -O - > /dev/null'
+
+alias sredis='redis-server /usr/local/etc/redis.conf'
 
 alias tmux='tmux -2'
 
@@ -38,7 +43,7 @@ export PATH=/Developer/usr/bin:$PATH
 export GOROOT=/usr/local/go
 export PATH=$GOROOT/bin:$PATH
 
-export PATH=/opt/local/include:/Developer/SDKs/MacOSX10.7.sdk/usr/X11/include:$PATH
+export PATH=/opt/local/include:/Developer/SDKs/MacOSX10.7.sdk/usr/X11/include:/usr/local/sbin:$PATH
 export GOPATH=/opt/local/include:/Developer/SDKs/MacOSX10.7.sdk/usr/X11/include:/Users/yoda/lang/go:$GOPATH
 autoload -U colors && colors
 

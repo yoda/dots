@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/yoda/lang/ruby/cgr-client-config/bhpb-iomp-staging/config'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/yoda/lang/ruby/cgr-notification/lib/cgr-notification/presenters'
+let g:netrw_dirhist_2='/Users/yoda/lang/ruby/cgr-notification/lib/cgr-notification/notifications'
+let g:netrw_dirhist_3='/Users/yoda/lang/ruby/cgr-notification/lib/cgr-notification/models'
+let g:netrw_dirhist_4='/Users/yoda/lang/ruby/treecutter/lib/treecutter'
