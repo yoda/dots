@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/yoda/lang/ruby/cgr-notification/lib/cgr-notification/presenters'
-let g:netrw_dirhist_2='/Users/yoda/lang/ruby/cgr-notification/lib/cgr-notification/notifications'
-let g:netrw_dirhist_3='/Users/yoda/lang/ruby/cgr-notification/lib/cgr-notification/models'
-let g:netrw_dirhist_4='/Users/yoda/lang/ruby/treecutter/lib/treecutter'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/yoda/lang/ruby/reference/lib/reference/models/dispatch'
+let g:netrw_dirhist_2='/Users/yoda/lang/ruby/cgr-notification/workers/controls'
+let g:netrw_dirhist_3='/Users/yoda/lang/ruby/cgr-client-config/oceaneering'
+let g:netrw_dirhist_4='/Users/yoda/lang/ruby/cgr-client-config/oceaneering/config/initializers'
+let g:netrw_dirhist_5='/Users/yoda/lang/ruby/dynamodel/config/environments'

@@ -6,6 +6,7 @@ export ZSH=$HOME/dots/zsh/oh-my-zsh
 # Osx Lion
 #export CC=gcc-4.2
 
+export CGR_DEV_PATH=$HOME/lang/ruby
 # RVM
 export rvm_project_rvmrc=1
 
@@ -13,6 +14,10 @@ alias r1='cd /Users/yoda/lang/ruby/cgr-foundation'
 alias r2='cd /Users/yoda/lang/ruby/cgr-dispatch'
 alias r3='cd /Users/yoda/lang/ruby/tattle'
 alias r4='cd /Users/yoda/lang/ruby/cgr-notification'
+alias r5='cd /Users/yoda/lang/ruby/horseman'
+
+alias gpom='git pull origin master'
+alias gpod='git pull origin development'
 
 alias hidedesktop='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
 alias showdesktop='defaults write com.apple.finder CreateDesktop -bool true; killall Finder'
@@ -33,7 +38,7 @@ plugins=(git, npm)
 source $ZSH/oh-my-zsh.sh
 
 # MacPorts Installer addition on 2011-03-04_at_11:59:28: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/Cellar:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 
