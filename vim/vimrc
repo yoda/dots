@@ -1,5 +1,6 @@
 filetype off
 call pathogen#runtime_append_all_bundles()
+set rtp+=$GOROOT/misc/vim
 filetype plugin indent on
 
 set nocompatible
@@ -43,9 +44,9 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 set wrap
-set textwidth=79
+set textwidth=95
 set formatoptions=qrn1
-set colorcolumn=85
+set colorcolumn=105
 
 
 " From vimcasts.org

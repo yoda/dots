@@ -15,6 +15,7 @@ alias r2='cd /Users/yoda/lang/ruby/cgr-dispatch'
 alias r3='cd /Users/yoda/lang/ruby/tattle'
 alias r4='cd /Users/yoda/lang/ruby/cgr-notification'
 alias r5='cd /Users/yoda/lang/ruby/horseman'
+alias r6='cd ~/lang/go/src/fserv'
 
 alias gpom='git pull origin master'
 alias gpod='git pull origin development'
