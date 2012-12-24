@@ -11,6 +11,8 @@ export CGR_DEVELOPMENT=true
 # RVM
 export rvm_project_rvmrc=1
 
+alias ak='ack -R -A 3 -B 3'
+
 alias r1='cd /Users/yoda/lang/ruby/cgr-foundation'
 alias r2='cd /Users/yoda/lang/ruby/cgr-dispatch'
 alias r3='cd /Users/yoda/lang/ruby/tattle'
