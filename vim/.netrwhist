@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/yoda/lang/ruby/tattle/lib/tattle'
-let g:netrw_dirhist_2='/Users/yoda/lang/ruby/horseman/lib/horseman'
-let g:netrw_dirhist_3='/'
-let g:netrw_dirhist_4='/Users/yoda/lang/ruby/view-model/lib/view_model'
-let g:netrw_dirhist_5='/Users/yoda/lang/ruby/cgr-foundation/spec/controllers'
-let g:netrw_dirhist_6='/Users/yoda/lang/ruby/resque/lib/resque'
-let g:netrw_dirhist_7='/Users/yoda/lang/ruby/resque/lib/resque/server'
-let g:netrw_dirhist_8='/Users/yoda/lang/ruby/tattle/lib/tattle'
-let g:netrw_dirhist_9='/Users/yoda/.rvm/gems/ruby-1.9.3-p194@cgr-foundation/bundler/gems/phantom-static-0b67154b11a8'
+let g:netrw_dirhist_cnt =0
