@@ -13,8 +13,8 @@ export rvm_project_rvmrc=1
 
 alias ak='ack -R -A 3 -B 3'
 
-alias r1='cd /Users/yoda/lang/ruby/cgr-foundation'
-alias r2='cd /Users/yoda/lang/ruby/cgr-dispatch'
+alias r1='cd /Users/yoda/cgr-foundation'
+alias r2='cd /Users/yoda/lang/ruby/cgr-vagrant'
 alias r3='cd /Users/yoda/lang/ruby/tattle'
 alias r4='cd /Users/yoda/lang/ruby/cgr-notification'
 alias r5='cd /Users/yoda/lang/ruby/horseman'
@@ -37,7 +37,7 @@ export ZSH_THEME="gentoo"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git, npm)
+plugins=()
 
 source $ZSH/oh-my-zsh.sh
 
@@ -46,6 +46,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/Cellar:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 
+export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/Developer/usr/bin:$PATH
 
@@ -150,3 +151,9 @@ currentworkingdirectory="$(print %{$Cyan%}%d%{$Color_Off%})"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+#export RUBY_HEAP_MIN_SLOTS=800000
+#export RUBY_HEAP_FREE_MIN=100000
+#export RUBY_HEAP_SLOTS_INCREMENT=300000
+#export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+#export RUBY_GC_MALLOC_LIMIT=79000000
