@@ -8,13 +8,12 @@ export ZSH=$HOME/dots/zsh/oh-my-zsh
 
 export CGR_DEV_PATH=$HOME/lang/ruby
 export CGR_DEVELOPMENT=true
-# RVM
-export rvm_project_rvmrc=1
 
 alias ak='ack -R -A 3 -B 3'
 
-alias r1='cd /Users/yoda/cgr-foundation'
+alias r1='cd /Users/yoda/cgr/cgr-foundation'
 alias r2='cd /Users/yoda/lang/ruby/cgr-vagrant'
+alias s2='ssh-add; cd /Users/yoda/lang/ruby/cgr-vagrant; vagrant ssh'
 alias r3='cd /Users/yoda/lang/ruby/tattle'
 alias r4='cd /Users/yoda/lang/ruby/cgr-notification'
 alias r5='cd /Users/yoda/lang/ruby/horseman'
@@ -147,13 +146,11 @@ colon="$(print %{$Red%}:%{$Color_Off%})"
 currentworkingdirectory="$(print %{$Cyan%}%d%{$Color_Off%})"
 
 #PS1="$username$atsign$hostname$colon $currentworkingdirectory %#> "
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 #export RUBY_HEAP_MIN_SLOTS=800000
 #export RUBY_HEAP_FREE_MIN=100000
 #export RUBY_HEAP_SLOTS_INCREMENT=300000
 #export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 #export RUBY_GC_MALLOC_LIMIT=79000000
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
