@@ -162,3 +162,5 @@ endfunction
 command! -nargs=? -range=% Space2Tab call IndentConvert(<line1>,<line2>,0,<q-args>)
 command! -nargs=? -range=% Tab2Space call IndentConvert(<line1>,<line2>,1,<q-args>)
 command! -nargs=? -range=% RetabIndent call IndentConvert(<line1>,<line2>,&et,<q-args>)
+
+autocmd FileType c,cpp,java,ruby,css,haml,javascript autocmd BufWritePre <buffer> :%s/\s\+$//e
