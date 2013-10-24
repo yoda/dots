@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/yoda/cgr-foundation/lib/cgr/foundation/item_ability/handlers'
 let g:netrw_dirhist_2='/usr/local'
 let g:netrw_dirhist_3='/Users/yoda/cgr/cgr-deployment'
+let g:netrw_dirhist_4='/Users/yoda/cgr/cgr-foundation/app'
