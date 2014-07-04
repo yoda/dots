@@ -2,6 +2,6 @@
 #
 # User's .xinitrc file
  
-xrdb -merge "${HOME}/.Xresources"
+#xrdb -merge "${HOME}/.Xresources"
  
-exec awesome && xmodmap "${HOME}/dots/Xorg/Xmodmap"
+#exec awesome && xmodmap "${HOME}/dots/Xorg/Xmodmap"

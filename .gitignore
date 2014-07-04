@@ -1,3 +1,4 @@
 # Ignore ....
 *.swp
 irssi/irssi/config
+*.un~
