@@ -2,3 +2,4 @@
 *.swp
 irssi/irssi/config
 *.un~
+*.netrwhist
