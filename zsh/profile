@@ -9,12 +9,14 @@ export ZSH=$HOME/dots/zsh/oh-my-zsh
 export CGR_DEV_PATH=$HOME/lang/ruby
 export CGR_DEVELOPMENT=true
 
+
+alias vim='nvim'
 alias ak='ack -R -A 3 -B 3'
 
 alias r1='cd /Users/yoda/cgr/cgr-foundation'
 alias r2='cd /Users/yoda/lang/ruby/cgr-vagrant'
 alias s2='ssh-add; cd /Users/yoda/lang/ruby/cgr-vagrant; vagrant ssh'
-alias r3='cd /Users/yoda/lang/ruby/tattle'
+alias r3='cd /Users/yoda/cgr/cider'
 alias r4='cd /Users/yoda/lang/ruby/cgr-notification'
 alias r5='cd /Users/yoda/lang/ruby/horseman'
 alias r6='cd ~/lang/go/src/fserv'
