@@ -12,6 +12,7 @@ export CGR_DEVELOPMENT=true
 
 alias vim='nvim'
 alias ak='ack -R -A 3 -B 3'
+alias fpwd="o='${PWD}'; cd ..; cd $o"
 
 alias r1='cd /Users/yoda/cgr/cgr-foundation'
 alias r2='cd /Users/yoda/lang/ruby/cgr-vagrant'

@@ -63,6 +63,8 @@ nmap <D-0> g^
 nmap <silent> <Leader>t :CtrlP<CR>
 let g:ctrlp_match_window = 'max:50,results:50'
 
+let g:ctrlp_custom_ignore = '\v(\/public\/|\/node_modules\/)'
+
 function Do256()
     " Enable 256 colors
     set t_Co=256
