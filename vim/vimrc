@@ -45,6 +45,10 @@ set textwidth=95
 set formatoptions=qrn1
 set colorcolumn=105
 
+set sua=.js,.jsx
+
+set path=.,/usr/include,,**
+
 
 " From vimcasts.org
 " Hold command and press navigation key inorder to navigate to apparent 
@@ -165,3 +169,5 @@ command! -nargs=? -range=% Tab2Space call IndentConvert(<line1>,<line2>,1,<q-arg
 command! -nargs=? -range=% RetabIndent call IndentConvert(<line1>,<line2>,&et,<q-args>)
 
 autocmd FileType c,cpp,java,ruby,css,haml,javascript autocmd BufWritePre <buffer> :%s/\s\+$//e
+
+

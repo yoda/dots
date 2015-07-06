@@ -15,6 +15,7 @@ alias ak='ack -R -A 3 -B 3'
 alias fpwd="o='${PWD}'; cd ..; cd $o"
 
 alias r1='cd /Users/yoda/cgr/cgr-foundation'
+alias r1js='cd /Users/yoda/cgr/cgr-foundation/app/assets/javascripts'
 alias r2='cd /Users/yoda/lang/ruby/cgr-vagrant'
 alias s2='ssh-add; cd /Users/yoda/lang/ruby/cgr-vagrant; vagrant ssh'
 alias r3='cd /Users/yoda/cgr/cider'
