@@ -49,7 +49,7 @@ set sua=.js,.jsx
 
 set path=.,/usr/include,,**
 
-set mouse=i
+set mouse=
 
 " From vimcasts.org
 " Hold command and press navigation key inorder to navigate to apparent 
