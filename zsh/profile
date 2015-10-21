@@ -55,6 +55,7 @@ export PATH=/Developer/usr/bin:$PATH
 
 export GOROOT=/usr/local/Cellar/go/1.0.3
 export PATH=$GOROOT/bin:$PATH
+export PATH=/usr/local/Cellar:$PATH
 
 export PATH=/opt/local/include:/Developer/SDKs/MacOSX10.7.sdk/usr/X11/include:/usr/local/sbin:$PATH
 export GOPATH=/opt/local/include:/Developer/SDKs/MacOSX10.7.sdk/usr/X11/include:/Users/yoda/lang/go:$GOPATH
