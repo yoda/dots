@@ -43,3 +43,6 @@
 [submodule "vim/bundle/editoryconfig-vim"]
 	path = vim/bundle/editoryconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "vim/bundle/vim-puppet"]
+	path = vim/bundle/vim-puppet
+	url = git@github.com:rodjek/vim-puppet.git
