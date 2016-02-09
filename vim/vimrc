@@ -172,3 +172,5 @@ command! -nargs=? -range=% RetabIndent call IndentConvert(<line1>,<line2>,&et,<q
 autocmd FileType c,cpp,java,ruby,css,haml,javascript autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 nnoremap <C-J> g_F<Space><Space>i<CR><Esc>k
+
+let g:jsx_ext_required = 0
