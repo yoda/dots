@@ -174,3 +174,7 @@ autocmd FileType c,cpp,java,ruby,css,haml,javascript autocmd BufWritePre <buffer
 nnoremap <C-J> g_F<Space><Space>i<CR><Esc>k
 
 let g:jsx_ext_required = 0
+
+let g:javascript_enable_domhtmlcss = 1
+
+tnoremap <ESC><ESC> <C-\><C-N>
