@@ -12,6 +12,7 @@ export CGR_DEVELOPMENT=true
 export EDITOR='vim'
 
 
+alias npm-exec='PATH=$(npm bin):$PATH'
 alias vim='nvim'
 alias ak='ack -R -A 3 -B 3'
 alias fpwd="o='${PWD}'; cd ..; cd $o"
