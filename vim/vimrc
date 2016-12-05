@@ -116,6 +116,18 @@ let g:rubycomplete_rails = 1
 
 au BufRead,BufNewFile *.hamlc set ft=haml
 
+au BufRead,BufNewFile *.json set filetype=json
+
+augroup json_autocmd
+  autocmd!
+  autocmd FileType json set autoindent
+  autocmd FileType json set formatoptions=tcq2l
+  autocmd FileType json set textwidth=78 shiftwidth=2
+  autocmd FileType json set softtabstop=2 tabstop=8
+  autocmd FileType json set expandtab
+  autocmd FileType json set foldmethod=syntax
+augroup END
+
 if has("autocmd") && exists("+omnifunc")
 autocmd Filetype *
         \	if &omnifunc == "" |
@@ -173,8 +185,11 @@ autocmd FileType c,cpp,java,ruby,css,haml,javascript autocmd BufWritePre <buffer
 
 nnoremap <C-J> g_F<Space><Space>i<CR><Esc>k
 
+
+
 let g:jsx_ext_required = 0
 
 let g:javascript_enable_domhtmlcss = 1
+let g:vim_json_syntax_conceal = 0
 
 tnoremap <ESC><ESC> <C-\><C-N>

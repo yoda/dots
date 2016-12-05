@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/Cellar:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-
+export PATH=/Users/yoda/Library/Android/sdk/platform-tools:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/Developer/usr/bin:$PATH
