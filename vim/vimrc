@@ -192,4 +192,5 @@ let g:jsx_ext_required = 0
 let g:javascript_enable_domhtmlcss = 1
 let g:vim_json_syntax_conceal = 0
 
+vnoremap <leader>64 c<c-r>=system('base64 --decode', @")<cr><esc>
 tnoremap <ESC><ESC> <C-\><C-N>

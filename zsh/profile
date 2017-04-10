@@ -175,3 +175,6 @@ export PATH=$PATH:$GOPATH/bin
 
 export NVM_DIR="/Users/yoda/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$HOME/.fastlane/bin:$PATH"
+

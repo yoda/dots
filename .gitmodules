@@ -55,3 +55,6 @@
 [submodule "vim/bundle/vim/bundle/vim-json"]
 	path = vim/bundle/vim/bundle/vim-json
 	url = https://github.com/elzr/vim-json
+[submodule "vim/bundle/vim-yaml"]
+	path = vim/bundle/vim-yaml
+	url = https://github.com/avakhov/vim-yaml.git
