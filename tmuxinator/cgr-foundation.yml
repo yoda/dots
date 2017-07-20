@@ -1,0 +1,74 @@
+# ~/.tmuxinator/cgr-foundation.yml
+
+<%-
+client_name = @args[0]
+client_name = "development" if client_name.nil?
+%>
+
+name: cgr-foundation
+root: ~/
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+startup_window: editor
+
+# Specitifes (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 1
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# Runs after everything. Use it to attach to tmux with custom options etc.
+post: tmux -CC attach -t cgr-foundation
+
+windows:
+  - webpack:
+    # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+    # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+    # synchronize: after
+    - cd lang/ruby/cgr-vagrant
+    - vagrant ssh
+    - cd ~/cgr-foundation
+    - nvm use
+    - yarn start
+  - rails:
+    - cd lang/ruby/cgr-vagrant
+    - vagrant ssh
+    - cd ~/cgr-foundation
+    - RAILS_PORT=3000 CGR_CLIENT=<%= client_name %> bundle exec rails s --binding 0.0.0.0 --port 3000
+  - mailcatcher:
+    - cd lang/ruby/cgr-vagrant
+    - vagrant ssh
+    - cd ~/cgr-foundation
+    - mailcatcher --ip 0.0.0.0 --smtp-port 2525 --http-port 8080 -f
+  - sidekiq:
+    - cd lang/ruby/cgr-vagrant
+    - vagrant ssh
+    - cd ~/cgr-foundation
+    - CGR_CLIENT=<%= client_name %> bundle exec sidekiq
+  - minio:
+    - cd lang/ruby/cgr-vagrant
+    - vagrant ssh
+    - cd
+    - ./minio server storage
+  - railsc:
+    - cd lang/ruby/cgr-vagrant
+    - vagrant ssh
+    - cd ~/cgr-foundation
+    - CGR_CLIENT=<%= client_name %> bundle exec rails c
+  - editor:
+    - cd lang/ruby/cgr-vagrant/cgr-foundation

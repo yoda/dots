@@ -13,6 +13,7 @@ export EDITOR='vim'
 
 
 alias npm-exec='PATH=$(npm bin):$PATH'
+alias yarn-exec='PATH=$(yarn bin):$PATH'
 alias vim='nvim'
 alias ak='ack -R -A 3 -B 3'
 alias fpwd="o='${PWD}'; cd ..; cd $o"
@@ -20,8 +21,8 @@ alias fpwd="o='${PWD}'; cd ..; cd $o"
 alias r1='cd /Users/yoda/lang/ruby/cgr-vagrant/cgr-foundation'
 alias r1js='cd /Users/yoda/cgr/cgr-foundation/app/assets/javascripts'
 alias r2='cd /Users/yoda/lang/ruby/cgr-vagrant'
-alias r3='cd /Users/yoda/lang/ruby/cgr-vagrant/cgr-js-template'
-alias r4='cd /Users/yoda/lang/ruby/cgr-vagrant/block-exp'
+alias r3='cd /Users/yoda/lang/ruby/cgr-vagrant/cgr-web'
+alias r4='cd /Users/yoda/lang/ruby/cgr-vagrant/cgr-api'
 alias r5='cd /Users/yoda/lang/ruby/cgr-vagrant/pixi-exp'
 alias s2='ssh-add; cd /Users/yoda/lang/ruby/cgr-vagrant; vagrant ssh'
 alias r6='cd /Users/yoda/lang/ruby/cgr-vagrant/golang/src/fserv'
@@ -52,7 +53,6 @@ export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/Cellar:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 export PATH=/Users/yoda/Library/Android/sdk/platform-tools:$PATH
-export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/Developer/usr/bin:$PATH
 
@@ -178,3 +178,4 @@ export NVM_DIR="/Users/yoda/.nvm"
 
 export PATH="$HOME/.fastlane/bin:$PATH"
 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
