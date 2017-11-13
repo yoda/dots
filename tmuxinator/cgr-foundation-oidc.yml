@@ -5,7 +5,7 @@ client_name = @args[0]
 client_name = "development" if client_name.nil?
 %>
 
-name: cgr-foundation-web
+name: cgr-foundation-web-oidc
 root: ~/
 
 # Optional tmux socket
@@ -33,7 +33,7 @@ startup_window: editor
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-post: tmux -CC attach -t cgr-foundation-web
+post: tmux -CC attach -t cgr-foundation-web-oidc
 
 windows:
   - webpack:
@@ -44,7 +44,7 @@ windows:
     - vagrant ssh
     - cd ~/cgr-foundation
     - nvm use
-    - ./node_modules/.bin/webpack-dev-server --inline --hot --env=dev --port 3001 --host 0.0.0.0 --content-base public --public cgr-foundation-web-assets.cgr.foundation
+    - yarn start
   - rails:
     - cd lang/ruby/cgr-vagrant
     - vagrant ssh
@@ -54,7 +54,7 @@ windows:
     - cd lang/ruby/cgr-vagrant
     - vagrant ssh
     - cd ~/cgr-foundation
-    - mailcatcher --ip 0.0.0.0 --smtp-port 2525 --http-port 8080 -f
+    - mailcatcher --ip 0.0.0.0 --smtp-port 2525 --http-port 8081 -f
   - sidekiq:
     - cd lang/ruby/cgr-vagrant
     - vagrant ssh
@@ -71,9 +71,10 @@ windows:
     - cd ~/cgr-foundation
     - CGR_CLIENT=<%= client_name %> bundle exec rails c
   - keycloak:
-    - ./keycloak-3.2.0.Final/bin/standalone.sh -b 0.0.0.0
-  - caddy:
-    - cd ~/caddy
-    - sudo ./caddy
+    - ./keycloak-3.3.0.Final/bin/standalone.sh -b 0.0.0.0
+  - tunnel:
+    - cd lang/ruby/cgr-vagrant
+    - vagrant ssh
+    - sshpass -p "vagrant" ssh localhost -L 8080:192.168.56.1:8080 -N
   - editor:
     - cd lang/ruby/cgr-vagrant/cgr-foundation

@@ -1,73 +1,73 @@
-urxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=13
-
-urxvt*background:  #000000
-urxvt*foreground:  #00ff00
-	urxvt*color0:			#000000
-	urxvt*color1:			#c00000
-	urxvt*color2:			#008000
-	urxvt*color3:			#808000
-	urxvt*color4:			#0000c0
-	urxvt*color5:			#c000c0
-	urxvt*color6:			#008080
-	urxvt*color7:			#c0c0c0
-	urxvt*color8:			#808080
-	urxvt*color9:			#ff6060
-	urxvt*color10:			#00ff00
-	urxvt*color11:			#ffff00
-	urxvt*color12:			#8080ff
-	urxvt*color13:			#ff40ff
-	urxvt*color14:			#00ffff
-	urxvt*color15:			#ffffff
-	urxvt*cursorColor:		White
-
-
-urxvt*pointerColor: white 
-urxvt*pointerColorBackground: black
-urxvt*internalBorder: 3
-urxvt*loginShell: true
-urxvt*scrollBar: false
-urxvt*scrollKey: true
-urxvt*saveLines: 1000
-urxvt*multiClickTime: 250 
-urxvt*visualBell: true
-
-
-xterm*font: -*-fixed-medium-r-*-*-20-*-*-*-*-*-iso8859-*
-xterm*font1: -*-*-*-*-*-*-2-*-*-*-*-*-*-*
-xterm*font2: -misc-fixed-*-r-normal-*-8-*-*-*-*-*-iso8859-*
-xterm*font3: -b&h-lucidatypewriter-bold-*-*-*-12-*-*-*-*-*-*-*
-xterm*font4: -*-screen-bold-r-normal-*-16-*-*-*-*-*-iso8859-*
-xterm*font5: -*-lucidatypewriter-medium-*-*-*-18-*-*-*-*-*-*-*
-xterm*font6: -*-lucidatypewriter-medium-*-*-*-20-*-*-*-*-*-*-*
-xterm*font7: -dec-terminal-bold-r-normal-*-14-*-*-*-*-*-iso8859-*
-
-XTerm*background:  #000000
-XTerm*foreground:  #00ff00
-	XTerm*color0:			#000000
-	XTerm*color1:			#c00000
-	XTerm*color2:			#008000
-	XTerm*color3:			#808000
-	XTerm*color4:			#0000c0
-	XTerm*color5:			#c000c0
-	XTerm*color6:			#008080
-	XTerm*color7:			#c0c0c0
-	XTerm*color8:			#808080
-	XTerm*color9:			#ff6060
-	XTerm*color10:			#00ff00
-	XTerm*color11:			#ffff00
-	XTerm*color12:			#8080ff
-	XTerm*color13:			#ff40ff
-	XTerm*color14:			#00ffff
-	XTerm*color15:			#ffffff
-	Xterm*cursorColor:		Black
-
-
-XTerm*pointerColor: white 
-XTerm*pointerColorBackground: black
-XTerm*internalBorder: 3
-XTerm*loginShell: true
-XTerm*scrollBar: false
-XTerm*scrollKey: true
-XTerm*saveLines: 1000
-XTerm*multiClickTime: 250 
-*visualBell: true
+#urxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=13
+#
+#urxvt*background:  #000000
+#urxvt*foreground:  #00ff00
+#	urxvt*color0:			#000000
+#	urxvt*color1:			#c00000
+#	urxvt*color2:			#008000
+#	urxvt*color3:			#808000
+#	urxvt*color4:			#0000c0
+#	urxvt*color5:			#c000c0
+#	urxvt*color6:			#008080
+#	urxvt*color7:			#c0c0c0
+#	urxvt*color8:			#808080
+#	urxvt*color9:			#ff6060
+#	urxvt*color10:			#00ff00
+#	urxvt*color11:			#ffff00
+#	urxvt*color12:			#8080ff
+#	urxvt*color13:			#ff40ff
+#	urxvt*color14:			#00ffff
+#	urxvt*color15:			#ffffff
+#	urxvt*cursorColor:		White
+#
+#
+#urxvt*pointerColor: white 
+#urxvt*pointerColorBackground: black
+#urxvt*internalBorder: 3
+#urxvt*loginShell: true
+#urxvt*scrollBar: false
+#urxvt*scrollKey: true
+#urxvt*saveLines: 1000
+#urxvt*multiClickTime: 250 
+#urxvt*visualBell: true
+#
+#
+#xterm*font: -*-fixed-medium-r-*-*-20-*-*-*-*-*-iso8859-*
+#xterm*font1: -*-*-*-*-*-*-2-*-*-*-*-*-*-*
+#xterm*font2: -misc-fixed-*-r-normal-*-8-*-*-*-*-*-iso8859-*
+#xterm*font3: -b&h-lucidatypewriter-bold-*-*-*-12-*-*-*-*-*-*-*
+#xterm*font4: -*-screen-bold-r-normal-*-16-*-*-*-*-*-iso8859-*
+#xterm*font5: -*-lucidatypewriter-medium-*-*-*-18-*-*-*-*-*-*-*
+#xterm*font6: -*-lucidatypewriter-medium-*-*-*-20-*-*-*-*-*-*-*
+#xterm*font7: -dec-terminal-bold-r-normal-*-14-*-*-*-*-*-iso8859-*
+#
+#XTerm*background:  #000000
+#XTerm*foreground:  #00ff00
+#	XTerm*color0:			#000000
+#	XTerm*color1:			#c00000
+#	XTerm*color2:			#008000
+#	XTerm*color3:			#808000
+#	XTerm*color4:			#0000c0
+#	XTerm*color5:			#c000c0
+#	XTerm*color6:			#008080
+#	XTerm*color7:			#c0c0c0
+#	XTerm*color8:			#808080
+#	XTerm*color9:			#ff6060
+#	XTerm*color10:			#00ff00
+#	XTerm*color11:			#ffff00
+#	XTerm*color12:			#8080ff
+#	XTerm*color13:			#ff40ff
+#	XTerm*color14:			#00ffff
+#	XTerm*color15:			#ffffff
+#	Xterm*cursorColor:		Black
+#
+#
+#XTerm*pointerColor: white 
+#XTerm*pointerColorBackground: black
+#XTerm*internalBorder: 3
+#XTerm*loginShell: true
+#XTerm*scrollBar: false
+#XTerm*scrollKey: true
+#XTerm*saveLines: 1000
+#XTerm*multiClickTime: 250 
+#*visualBell: true
