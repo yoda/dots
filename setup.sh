@@ -14,12 +14,12 @@ export SCREENCONF="$HOME/.screenrc"
 export TMUXCONF="$HOME/.tmux.conf"
 export VIMRCCONF="$HOME/.vimrc"
 export VIMCONF="$HOME/.vim"
-export AWESOMECONF="$HOME/.config"
 export XRESCONF="$HOME/.Xdefaults"
 export XINITRCCONF="$HOME/.xinitrc"
 export IRSSICONF="$HOME/.irssi"
 export BASHPROFILECONF="$HOME/.profile"
 export ZSHPROFILECONF="$HOME/.zshrc"
+export TMUXINATORFILECONF="$HOME/.tmuxinator"
 
 export ERRORMSG="exists backup or remove"
 export COMPLETEMSG="Created link successfully"
@@ -60,15 +60,6 @@ else
     echo $VIMCONF $COMPLETEMSG
     # Setup vim 
     ln -s $SCRIPTDIR/vim/ $VIMCONF 
-fi
-
-if [ -e $AWESOMECONF ]
-then
-    echo $AWESOMECONF $ERRORMSG
-else
-    echo $AWESOMECONF $COMPLETEMSG
-    # Setup awesome
-    ln -s $SCRIPTDIR/awesome/config/ $AWESOMECONF
 fi
 
 if [ -e $XRESCONF ]
@@ -114,4 +105,13 @@ else
     echo $ZSHPROFILECONF $COMPLETEMSG
     # Setup irssi
     ln -s $SCRIPTDIR/zsh/profile $ZSHPROFILECONF 
+fi
+
+if [ -e $TMUXINATORCONF ]
+then
+    echo $TMUXINATORCONF $ERRORMSG
+else
+    echo $TMUXINATORCONF $COMPLETEMSG
+    # Setup 
+    ln -s $SCRIPTDIR/tmuxinator $TMUXINATORCONF 
 fi

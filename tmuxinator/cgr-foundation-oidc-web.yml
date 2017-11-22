@@ -3,12 +3,10 @@
 <%-
 client_name = @args[0]
 client_name = "development" if client_name.nil?
-session_name = 'cgr-foundation-oidc'
 %>
 
-name: <%= session_name %>
+name: cgr-foundation-web-oidc
 root: ~/
-attach: false
 
 # Optional tmux socket
 # socket_name: foo
@@ -35,7 +33,7 @@ startup_window: editor
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-on_project_exit: tmux -CC attach -t <%= session_name %>
+post: tmux -CC attach -t cgr-foundation-web-oidc
 
 windows:
   - webpack:

@@ -3,12 +3,10 @@
 <%-
 client_name = @args[0]
 client_name = "development" if client_name.nil?
-session_name = 'cgr-foundation-oidc'
 %>
 
-name: <%= session_name %>
+name: cgr-foundation-web-oidc-faktory
 root: ~/
-attach: false
 
 # Optional tmux socket
 # socket_name: foo
@@ -35,7 +33,7 @@ startup_window: editor
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-on_project_exit: tmux -CC attach -t <%= session_name %>
+post: tmux -CC attach -t cgr-foundation-web-oidc-faktory
 
 windows:
   - webpack:
@@ -57,11 +55,6 @@ windows:
     - vagrant ssh
     - cd ~/cgr-foundation
     - mailcatcher --ip 0.0.0.0 --smtp-port 2525 --http-port 8081 -f
-  - sidekiq:
-    - cd lang/ruby/cgr-vagrant
-    - vagrant ssh
-    - cd ~/cgr-foundation
-    - CGR_CLIENT=<%= client_name %> bundle exec sidekiq
   - minio:
     - cd lang/ruby/cgr-vagrant
     - vagrant ssh
@@ -78,5 +71,11 @@ windows:
     - cd lang/ruby/cgr-vagrant
     - vagrant ssh
     - sshpass -p "vagrant" ssh localhost -L 8080:192.168.56.1:8080 -N
+  - tunnel2:
+    - cd lang/ruby/cgr-vagrant
+    - vagrant ssh
+    - sshpass -p "vagrant" ssh localhost -L 7419:192.168.56.1:7419 -N
+  - faktory:
+    - faktory
   - editor:
     - cd lang/ruby/cgr-vagrant/cgr-foundation
