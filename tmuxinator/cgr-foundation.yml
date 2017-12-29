@@ -3,10 +3,12 @@
 <%-
 client_name = @args[0]
 client_name = "development" if client_name.nil?
+session_name = 'cgr-foundation'
 %>
 
-name: cgr-foundation
+name: <%= session_name %>
 root: ~/
+attach: false
 
 # Optional tmux socket
 # socket_name: foo
@@ -33,7 +35,7 @@ startup_window: editor
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-post: tmux -CC attach -t cgr-foundation
+on_project_exit: tmux -CC attach -t <%= session_name %>
 
 windows:
   - webpack:
@@ -54,7 +56,7 @@ windows:
     - cd lang/ruby/cgr-vagrant
     - vagrant ssh
     - cd ~/cgr-foundation
-    - mailcatcher --ip 0.0.0.0 --smtp-port 2525 --http-port 8080 -f
+    - mailcatcher --ip 0.0.0.0 --smtp-port 2525 --http-port 8081 -f
   - sidekiq:
     - cd lang/ruby/cgr-vagrant
     - vagrant ssh

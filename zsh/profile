@@ -22,10 +22,12 @@ alias r1='cd /Users/yoda/lang/ruby/cgr-vagrant/cgr-foundation'
 alias r1js='cd /Users/yoda/cgr/cgr-foundation/app/assets/javascripts'
 alias r2='cd /Users/yoda/lang/ruby/cgr-vagrant'
 alias r3='cd /Users/yoda/lang/ruby/cgr-vagrant/cgr-web'
-alias r4='cd /Users/yoda/lang/ruby/cgr-vagrant/cgr-api'
+alias r4='cd /Users/yoda/lang/golang/src/bitbucket.org/cgrdev/cgrf'
 alias r5='cd /Users/yoda/lang/ruby/cgr-vagrant/pixi-exp'
 alias s2='ssh-add; cd /Users/yoda/lang/ruby/cgr-vagrant; vagrant ssh'
 alias r6='cd /Users/yoda/lang/ruby/cgr-vagrant/golang/src/fserv'
+
+alias git-changed='git diff-tree --no-commit-id --name-only -r'
 
 alias gpom='git pull origin master'
 alias gpod='git pull origin development'
@@ -168,10 +170,12 @@ fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+export PATH=$PATH:"$(python -m site --user-base)/bin"
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
-export GOPATH=$HOME/lang/ruby/cgr-vagrant/golang
+export GOPATH=$HOME/lang/golang
 export PATH=$PATH:$GOPATH/bin
 
 export NVM_DIR="/Users/yoda/.nvm"
@@ -180,3 +184,7 @@ export NVM_DIR="/Users/yoda/.nvm"
 export PATH="$HOME/.fastlane/bin:$PATH"
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+export PATH="/usr/local/opt/libxml2/bin:$PATH"
+export PATH="/usr/local/opt/openldap/bin:$PATH"
+export PATH="/usr/local/opt/openldap/sbin:$PATH"
