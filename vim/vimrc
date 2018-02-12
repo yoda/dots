@@ -101,6 +101,9 @@ endif
 com! -nargs=* Color256 exe Do256()
 com! -nargs=* UnColor256 exe UnDo256()
 
+if (has("termguicolors"))
+ set termguicolors
+endif
 syntax on
 set nocp
 filetype plugin on
