@@ -23,7 +23,7 @@ alias r1js='cd /Users/yoda/cgr/cgr-foundation/app/assets/javascripts'
 alias r2='cd /Users/yoda/lang/ruby/cgr-vagrant'
 alias r3='cd /Users/yoda/lang/ruby/cgr-vagrant/cgr-web'
 alias r4='cd /Users/yoda/lang/golang/src/bitbucket.org/cgrdev/cgrf'
-alias r5='cd /Users/yoda/lang/ruby/cgr-vagrant/pixi-exp'
+alias r5='cd ~/lang/golang/cgrf-grpc'
 alias s2='ssh-add; cd /Users/yoda/lang/ruby/cgr-vagrant; vagrant ssh'
 alias r6='cd /Users/yoda/lang/ruby/cgr-vagrant/golang/src/fserv'
 
@@ -193,3 +193,5 @@ export PATH="/usr/local/opt/openldap/sbin:$PATH"
 
 . $HOME/.asdf/completions/asdf.bash
 export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+export CLASSPATH="/usr/local/Cellar/antlr/4.7.1/antlr-4.7.1-complete.jar:."
