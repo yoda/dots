@@ -201,3 +201,4 @@ export CLASSPATH="/usr/local/Cellar/antlr/4.7.1/antlr-4.7.1-complete.jar:."
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="/usr/local/opt/nss/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
