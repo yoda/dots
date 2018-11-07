@@ -21,8 +21,8 @@ alias fpwd="o='${PWD}'; cd ..; cd $o"
 alias r1='cd /Users/yoda/lang/ruby/cgr-vagrant/cgr-foundation'
 alias r1js='cd /Users/yoda/cgr/cgr-foundation/app/assets/javascripts'
 alias r2='cd /Users/yoda/lang/ruby/cgr-vagrant'
-alias r3='cd /Users/yoda/lang/ruby/cgr-vagrant/cgr-web'
-alias r4='cd /Users/yoda/lang/golang/src/bitbucket.org/cgrdev/cgrf'
+alias r3='cd /Users/yoda/lang/deploy/cgr-ansible'
+alias r4='cd /Users/yoda/lang/deploy/cgr-terraform'
 alias r5='cd ~/lang/golang/cgrf-grpc'
 alias s2='ssh-add; cd /Users/yoda/lang/ruby/cgr-vagrant; vagrant ssh'
 alias r6='cd /Users/yoda/lang/ruby/cgr-vagrant/golang/src/fserv'
@@ -151,6 +151,8 @@ hostname="$(print %{$BIBlue%}%m%{$Color_Off%})"
 colon="$(print %{$Red%}:%{$Color_Off%})"
 currentworkingdirectory="$(print %{$Cyan%}%d%{$Color_Off%})"
 
+urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
+
 #PS1="$username$atsign$hostname$colon $currentworkingdirectory %#> "
 
 #export RUBY_HEAP_MIN_SLOTS=800000
@@ -184,7 +186,6 @@ export NVM_DIR="/Users/yoda/.nvm"
 export PATH="$HOME/.fastlane/bin:$PATH"
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 export PATH="/usr/local/opt/libxml2/bin:$PATH"
 export PATH="/usr/local/opt/openldap/bin:$PATH"
 export PATH="/usr/local/opt/openldap/sbin:$PATH"
@@ -193,5 +194,10 @@ export PATH="/usr/local/opt/openldap/sbin:$PATH"
 
 . $HOME/.asdf/completions/asdf.bash
 export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="~/.local/bin:$PATH"
 
 export CLASSPATH="/usr/local/Cellar/antlr/4.7.1/antlr-4.7.1-complete.jar:."
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+export PATH="/usr/local/opt/nss/bin:$PATH"

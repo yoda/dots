@@ -6,6 +6,7 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 call pathogen#runtime_append_all_bundles()
 set rtp+=$GOROOT/misc/vim
 filetype plugin indent on
+set rtp+=/usr/local/opt/fzf
 
 set nocompatible
 set modelines=0
@@ -69,7 +70,7 @@ nmap <D-4> g$
 nmap <D-6> g^
 nmap <D-0> g^
 
-nmap <silent> <Leader>t :CtrlP<CR>
+nmap <silent> <Leader>t :FZF<CR>
 let g:ctrlp_match_window = 'max:50,results:50'
 
 let g:ctrlp_custom_ignore = '\v(\/public\/|\/node_modules\/)'
@@ -109,13 +110,6 @@ set nocp
 filetype plugin on
 filetype indent on
 set guifont=DejaVu\ Sans\ Mono:h20
-" If not gui
-colorscheme Vitamins_Vim_Colorscheme_by_hcalves
-" Color Scheme (only if GUI running)
-if has("gui_running")
-  colorscheme Vitamins_Vim_Colorscheme_by_hcalves
-  set guifont=DejaVu\ Sans\ Mono:h14
-endif
 
 let g:rubycomplete_buffer_laoding = 1
 let g:rubycomplete_classes_in_global = 1
@@ -145,10 +139,6 @@ set noswapfile
 
 
 command W w !sudo tee % > /dev/null
-
-if &diff
-  colorscheme evening
-endif
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -200,3 +190,42 @@ let g:javascript_enable_domhtmlcss = 1
 let g:vim_json_syntax_conceal = 0
 
 vnoremap <leader>64 c<c-r>=system('base64 --decode', @")<cr><esc>
+
+
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.local/share/nvim/plugged')
+
+" Make sure you use single quotes
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+Plug 'vim-airline/vim-airline'
+
+Plug 'sheerun/vim-polyglot'
+
+Plug 'jacoborus/tender.vim'
+
+" Initialize plugin system
+call plug#end()
+
+au BufRead,BufNewFile */playbooks/**/*.yml set filetype=yaml.ansible
+
+" If you have vim >=8.0 or Neovim >= 0.1.5
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+" For Neovim 0.1.3 and 0.1.4
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+let g:airline_theme = 'tender'
+
+" Theme
+syntax enable
+colorscheme tender
+
