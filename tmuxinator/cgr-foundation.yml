@@ -43,33 +43,33 @@ windows:
     # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
     # synchronize: after
     - cd lang/ruby/cgr-vagrant
-    - retry 0 vagrant ssh
+    - retry 5 vagrant ssh
     - cd ~/cgr-foundation
     - nvm use
     - yarn start
   - rails:
     - cd lang/ruby/cgr-vagrant
-    - vagrant ssh
+    - retry 5 vagrant ssh
     - cd ~/cgr-foundation
     - RAILS_PORT=3000 CGR_CLIENT=<%= client_name %> bundle exec rails s --binding 0.0.0.0 --port 3000
   - mailcatcher:
     - cd lang/ruby/cgr-vagrant
-    - retry 0 vagrant ssh
+    - retry 5 vagrant ssh
     - cd ~/cgr-foundation
     - mailcatcher --ip 0.0.0.0 --smtp-port 2525 --http-port 8081 -f
   - sidekiq:
     - cd lang/ruby/cgr-vagrant
-    - retry 0 vagrant ssh
+    - retry 5 vagrant ssh
     - cd ~/cgr-foundation
     - CGR_CLIENT=<%= client_name %> bundle exec sidekiq
   - minio:
     - cd lang/ruby/cgr-vagrant
-    - retry 0 vagrant ssh
+    - retry 5 vagrant ssh
     - cd
     - ./minio server storage
   - railsc:
     - cd lang/ruby/cgr-vagrant
-    - retry 0 vagrant ssh
+    - retry 5 vagrant ssh
     - cd ~/cgr-foundation
     - CGR_CLIENT=<%= client_name %> bundle exec rails c
   - editor:

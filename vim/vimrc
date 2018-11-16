@@ -210,6 +210,8 @@ Plug 'sheerun/vim-polyglot'
 
 Plug 'jacoborus/tender.vim'
 
+Plug 'ekalinin/Dockerfile.vim'
+
 " Initialize plugin system
 call plug#end()
 
