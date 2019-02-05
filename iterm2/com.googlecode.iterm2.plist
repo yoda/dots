@@ -912,11 +912,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>-1270 648 620 392 -1920 150 1920 1057 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>-1651 226 618 519 -1920 150 1920 1057 </string>
+	<string>-1651 226 606 469 -1920 150 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>446 625 928 394 0 0 1680 1027 </string>
+	<string>-1353 805 928 394 -1920 150 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2320 150 1274 1057 1680 150 1920 1057 </string>
+	<string>-1920 150 1920 1057 -1920 150 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 28 1914 1021 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2210,6 +2210,8 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -2286,13 +2288,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-11-06T10:57:25Z</date>
+	<date>2018-12-31T13:13:06Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>UseBorder</key>
 	<false/>
 	<key>WindowNumber</key>
@@ -2302,6 +2304,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.2.5</string>
+	<string>3.2.6</string>
 </dict>
 </plist>

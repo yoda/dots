@@ -9,7 +9,7 @@ export ZSH=$HOME/dots/zsh/oh-my-zsh
 export CGR_DEV_PATH=$HOME/lang/ruby
 export CGR_DEVELOPMENT=true
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 
 alias npm-exec='PATH=$(npm bin):$PATH'
@@ -52,10 +52,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias ls='exa'
 # MacPorts Installer addition on 2011-03-04_at_11:59:28: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/Cellar:$PATH
+#--- # export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/Cellar:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-export PATH=/Users/yoda/Library/Android/sdk/platform-tools:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/Developer/usr/bin:$PATH
 
@@ -162,13 +161,7 @@ urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
 #export RUBY_GC_MALLOC_LIMIT=79000000
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
-export PATH="/usr/local/packer:$PATH"
 
-# Add GHC 7.8.3 to the PATH, via http://ghcformacosx.github.io/
-export GHC_DOT_APP="/Applications/ghc-7.8.3.app"
-if [ -d "$GHC_DOT_APP" ]; then
-  export PATH="${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
-fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
@@ -183,16 +176,7 @@ export PATH=$PATH:$GOPATH/bin
 export NVM_DIR="/Users/yoda/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export PATH="$HOME/.fastlane/bin:$PATH"
 
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PATH="/usr/local/opt/libxml2/bin:$PATH"
-export PATH="/usr/local/opt/openldap/bin:$PATH"
-export PATH="/usr/local/opt/openldap/sbin:$PATH"
-
-. $HOME/.asdf/asdf.sh
-
-. $HOME/.asdf/completions/asdf.bash
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="~/.local/bin:$PATH"
 
@@ -202,3 +186,4 @@ export CLASSPATH="/usr/local/Cellar/antlr/4.7.1/antlr-4.7.1-complete.jar:."
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="/usr/local/opt/nss/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"

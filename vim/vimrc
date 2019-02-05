@@ -3,7 +3,6 @@ filetype off
 let g:python2_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
-call pathogen#runtime_append_all_bundles()
 set rtp+=$GOROOT/misc/vim
 filetype plugin indent on
 set rtp+=/usr/local/opt/fzf
@@ -199,8 +198,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " Make sure you use single quotes
 
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
@@ -211,6 +208,15 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jacoborus/tender.vim'
 
 Plug 'ekalinin/Dockerfile.vim'
+
+Plug 'editorconfig/editorconfig-vim'
+
+Plug 'tpope/vim-eunuch'
+
+Plug 'terryma/vim-multiple-cursors'
+
+Plug 'w0rp/ale'
+
 
 " Initialize plugin system
 call plug#end()
@@ -226,6 +232,13 @@ endif
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 let g:airline_theme = 'tender'
+
+let g:ale_fixers = {
+      \  '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \  'javascript': ['eslint'],
+      \  'ruby': ['rubocop'],
+      \}
+
 
 " Theme
 syntax enable
