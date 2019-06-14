@@ -217,7 +217,6 @@ Plug 'terryma/vim-multiple-cursors'
 
 Plug 'w0rp/ale'
 
-
 " Initialize plugin system
 call plug#end()
 

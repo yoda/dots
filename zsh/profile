@@ -12,6 +12,10 @@ export CGR_DEVELOPMENT=true
 export EDITOR='nvim'
 
 
+alias dlog='docker logs `docker ps -a --format "{{.ID}}" | head -n 1`'
+alias dinspect='docker container inspect `docker ps -a --format "{{.ID}}" | head -n 1`'
+alias dcmdinspect='dinspect | jq ".[0].Config.Cmd"'
+
 alias npm-exec='PATH=$(npm bin):$PATH'
 alias yarn-exec='PATH=$(yarn bin):$PATH'
 alias vim='nvim'
@@ -187,3 +191,5 @@ export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="/usr/local/opt/nss/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/Users/yoda/.cabal/bin:$PATH"
+export PATH="/usr/local/opt/gettext/bin:$PATH"
