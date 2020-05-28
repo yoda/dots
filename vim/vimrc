@@ -189,6 +189,7 @@ let g:javascript_enable_domhtmlcss = 1
 let g:vim_json_syntax_conceal = 0
 
 vnoremap <leader>64 c<c-r>=system('base64 --decode', @")<cr><esc>
+vnoremap <leader>+64 c<c-r>=system('base64', @")<cr><esc>
 
 
 " Specify a directory for plugins
@@ -203,6 +204,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'vim-airline/vim-airline'
 
+Plug 'tpope/vim-surround'
+
 Plug 'sheerun/vim-polyglot'
 
 Plug 'jacoborus/tender.vim'
@@ -216,6 +219,8 @@ Plug 'tpope/vim-eunuch'
 Plug 'terryma/vim-multiple-cursors'
 
 Plug 'w0rp/ale'
+
+Plug 'vim-scripts/UnconditionalPaste'
 
 " Initialize plugin system
 call plug#end()

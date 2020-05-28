@@ -1,1 +1,1 @@
-/Users/yoda/.vimrc
+vimrc
