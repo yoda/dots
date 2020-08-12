@@ -16,13 +16,13 @@ alias dlog='docker logs `docker ps -a --format "{{.ID}}" | head -n 1`'
 alias dinspect='docker container inspect `docker ps -a --format "{{.ID}}" | head -n 1`'
 alias dcmdinspect='dinspect | jq ".[0].Config.Cmd"'
 
-alias ssh='kitty +kitten ssh'
+# alias ssh='kitty +kitten ssh'
 alias npm-exec='PATH=$(npm bin):$PATH'
 alias yarn-exec='PATH=$(yarn bin):$PATH'
 alias vim='nvim'
 alias ak='ack -R -A 3 -B 3'
 alias fpwd="o='${PWD}'; cd ..; cd $o"
-alias genpw="tr -cd '[:alnum:]' < /dev/urandom | fold -w30 | head -n1 | tr -d '\n'"
+alias genpw="LC_CTYPE=C tr -cd '[:alnum:]' < /dev/urandom | fold -w30 | head -n1 | tr -d '\n'"
 
 alias nload="nload -t 200 -i 1024 -o 128 -U M"
 
@@ -30,9 +30,8 @@ alias r1="cd $HOME/lang/ruby/cgr-foundation"
 alias r2="cd $HOME/lang/ruby/cgrf_scim"
 alias r3="cd $HOME/lang/deploy/cgr-ansible"
 alias r4="cd $HOME/lang/deploy/cgr-terraform"
-alias r5="cd $HOME/lang/golang/cgrf-grpc"
-alias s2="ssh-add; cd /lang/ruby/cgr-vagrant; vagrant ssh"
-alias r6="cd $HOME/lang/ruby/cgr-vagrant/golang/src/fserv"
+alias r5="cd $HOME/lang/deploy/scratch-vault"
+alias r6="cd $HOME/lang/ruby/cgr-foundation2"
 
 alias git-changed='git diff-tree --no-commit-id --name-only -r'
 
@@ -48,8 +47,8 @@ alias sredis='redis-server /usr/local/etc/redis.conf'
 
 alias tmux='tmux -2'
 
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
+# alias pbcopy='xclip -selection clipboard'
+# alias pbpaste='xclip -selection clipboard -o'
 
 
 # Theme
@@ -59,6 +58,7 @@ export ZSH_THEME="gentoo"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=( fzf )
 
+ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 alias ls='exa'
@@ -206,4 +206,5 @@ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/bin"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 
+eval "$(pyenv init -)"
 

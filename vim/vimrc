@@ -181,6 +181,11 @@ autocmd FileType c,cpp,java,ruby,css,haml,javascript autocmd BufWritePre <buffer
 
 nnoremap <C-J> g_F<Space><Space>i<CR><Esc>k
 
+" nnoremap <expr> p (v:register ==# '"' ? '"0' : '') . 'p'
+" nnoremap <expr> P (v:register ==# '"' ? '"0' : '') . 'P'
+" xnoremap <expr> p (v:register ==# '"' ? '"0' : '') . 'p'
+" xnoremap <expr> P (v:register ==# '"' ? '"0' : '') . 'P'
+
 
 
 let g:jsx_ext_required = 0
